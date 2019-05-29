@@ -1,0 +1,114 @@
+
+./Filecheck_data.ksh "MODFieldChangeFeed.csv" *20181029*
+ 
+  cd /var/tmp/sk95652
+ 
+ 
+$ grep Error /data/matrix/logs/server/Mtrx_IntlServlets_Node1.log.201901100220
+$ grep "Root cause of ServletException" /data/matrix/logs/server/Mtrx_IntlServlets_Node1.log.201901100220
+ 
+-rw-rw-r-- 1 mtrxadm slprod 624 Jan 14 04:10 start_FailsProcessor.log
+-rw-rw-r-- 1 mtrxadm slprod 560 Jan 14 04:10 start_SPB.log
+bash-3.2$ cat start_FailsProcessor.log
+weblogic.Deployer invoked with options:  -adminurl t3://mtrxlnx2u-phys.nam.nsroot.net:37001 -username weblogic -name FailsProcessor -redeploy -targets Mtrx_RptsServlets_Node1
+<Jan 14, 2019 4:10:43 AM EST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating redeploy operation for application, FailsProcessor [archive: null], to Mtrx_RptsServlets_Node1 .> 
+ 
+ 
+ 
+deleting existed branch
+/projects/stkloan/MATRIX/bin/git.version.ksh UAT 22.10.0 DELETE_AUTO
+ 
+ 
+/projects/stkloan/MATRIX/bin/git.version.ksh UAT 22.10.0 DELETE_DB
+ 
+kill -9 12942
+ 
+ 
+ 
+grep -i exception node1/node 2 log
+ 
+ 
+tail -f log file
+ 
+ 
+ 
+ps -ef|grep java|grep Mtrx_|wc -l
+/home/mtrxadm/Deployment
+ 
+ 
+ 
+ 
+ 
+find /data/matrix/logs/server/ -xdev -size +50000 -exec ls -lrt {} \; | sort -nrk 5 | head -50
+find /export1 -xdev -size +10000 -exec ls -lrt {} \;|sort -nrk 5 |head -45
+ 
+ 
+ 
+kill -9 process id
+ 
+
+ps -ef|grep java|grep Mtrx_*------------exception
+ 
+ 
+chmod 554 SendFileWithSftp.ksh 
+ 
+ 
+tr /data/matrix/logs/server/*UPD*
+ 
+ 
+ls -l -tr /data/matrix/logs/server/*UPD*
+ 
+ps 
+ df _k .
+/data/matrix/logs/server% df .
+ 
+ 
+INTG ____TRUNK
+ 
+UAT_____BRANCH
+ 
+ 
+ps -ef | grep Book
+ 
+ 
+ 
+source /opt/CA/WorkloadAutomationAE/aliases----------swap jil
+$ QE2
+ 
+ 
+/var/tmp/tx52795/tpam/tpam.ksh ----date base passward
+ 
+ 
+ 
+sftp connection testing
+ 
+send a text file in sftp
+ 
+cd /tmp/
+ 
+vi textfile.txt
+ 
+sftp destinationfid@destination server
+lcd /data/pacmen/
+cd /data/pacman/
+put textfile.txt
+ 
+ 
+ 
+findind zombie process
+ 
+1. How can I get the Zombie from process list…?
+# ps aux |grep "defunct"
+ 
+ps aux |grep Z
+ 
+ps aux | awk {'print $8'}|grep -c Z
+ 
+List the PID of Zombie…?
+ps aux | awk '{ print $8 " " $2 }' | grep -w Z
+ 
+ 
+ 
+uuencode <ActualFilename> <Filename to be sent in mail> | mail username@citi.com
+uuencode upo5215.pgp upo5215.pgp | mail ss13779@imcnam.ssmb.com 
+ 
